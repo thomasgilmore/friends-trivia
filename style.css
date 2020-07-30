@@ -8,7 +8,11 @@ body {
     padding: 2px 5px 30px 5px;
 }
 
-h1 {
+.errorText{
+    text-align: center;
+}
+
+.friendsTriviaTitle {
     font-size: 40px;
     text-align: center;
 }
