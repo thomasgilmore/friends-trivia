@@ -1,0 +1,16 @@
+body {
+    background-color: #9c8cd4;
+}
+
+button {
+    background-color: white;
+    border-radius: 35%;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.hover:hover {
+    background-color: #ffdf00;
+    color: black;
+}
