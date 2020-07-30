@@ -1,6 +1,5 @@
 let numberOfCorrectAnswers = 0;
 let numberOfWrongAnswers = 0;
-let score = 0;
 let percentage = 0;
 
 const wrongAnswer = (classOfButtonClicked, classOfOtherButton) => {
@@ -9,7 +8,9 @@ const wrongAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfOtherButton).attr("disabled","disabled");
     $(classOfOtherButton).removeClass("hover");
     numberOfWrongAnswers++;
-    console.log(numberOfWrongAnswers);
+    if (numberOfCorrectAnswers + numberOfWrongAnswers == 10) {
+        $('.playersPercentageCorrect').removeClass("hide");
+    }
 };
 const rightAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfButtonClicked).css('background-color', '#00FF0A');
@@ -19,7 +20,9 @@ const rightAnswer = (classOfButtonClicked, classOfOtherButton) => {
     numberOfCorrectAnswers++;
     percentage = (numberOfCorrectAnswers / 10 ) * 100;
     $('.percentage').html(percentage.toString());
-    console.log(numberOfCorrectAnswers);
+    if (numberOfCorrectAnswers + numberOfWrongAnswers == 10) {
+        $('.playersPercentageCorrect').removeClass("hide");
+    }
 };
 
 $('.Days-of-Our-Lives').on('click', function() { rightAnswer('.Days-of-Our-Lives', '.General-Hospital'); });
