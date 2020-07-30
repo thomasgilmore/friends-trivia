@@ -1,6 +1,7 @@
 let numberOfCorrectAnswers = 0;
 let numberOfWrongAnswers = 0;
 let score = 0;
+let percentage = 0;
 
 const wrongAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfButtonClicked).css('background-color', '#FF0000');
@@ -16,7 +17,8 @@ const rightAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfOtherButton).attr("disabled","disabled");
     $(classOfOtherButton).removeClass("hover");
     numberOfCorrectAnswers++;
-    $('.score').html(numberOfCorrectAnswers.toString());
+    percentage = (numberOfCorrectAnswers / 10 ) * 100;
+    $('.percentage').html(percentage.toString());
     console.log(numberOfCorrectAnswers);
 };
 
@@ -40,7 +42,3 @@ $('.A-yellow-picture-frame').on('click', function() { rightAnswer('.A-yellow-pic
 $('.A-coat-hook').on('click', function() { wrongAnswer('.A-coat-hook', '.A-yellow-picture-frame'); });
 $('.Cynthia-Fee').on('click', function() { wrongAnswer('.Cynthia-Fee', '.The-Rembrandts'); });
 $('.The-Rembrandts').on('click', function() { rightAnswer('.The-Rembrandts', '.Cynthia-Fee'); });
-
-if (numberOfCorrectAnswers + numberOfWrongAnswers === 10) {
-    score = (numberOfCorrectAnswers / 5) * 100;
-}
