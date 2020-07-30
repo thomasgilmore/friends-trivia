@@ -18,6 +18,8 @@ body {
 }
 
 .playersPercentageCorrect {
+    margin-top: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -44,4 +46,8 @@ button {
 .hover:hover {
     background-color: #ffdf00;
     color: black;
+}
+
+.hide {
+    display: none;
 }
