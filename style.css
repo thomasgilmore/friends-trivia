@@ -4,10 +4,12 @@ body {
 
 button {
     background-color: white;
-    border-radius: 35%;
+    border-radius: 25%;
     color: black;
+    height: 35px;
     margin: 5px;
     padding: 5px;
+    width: 150px;
 }
 
 .hover:hover {
