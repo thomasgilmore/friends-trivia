@@ -13,7 +13,7 @@ body {
 }
 
 .friendsTriviaTitle {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 p {
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -35,12 +35,14 @@ p {
 
 button {
     background-color: white;
-    border-radius: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
     color: black;
-    height: 35px;
+    font-size: 15px;
+    height: 40px;
     margin: 5px;
     padding: 5px;
-    width: 150px;
+    width: 180px;
 }
 
 .hover:hover {
