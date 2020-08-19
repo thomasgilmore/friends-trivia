@@ -1,55 +1,173 @@
-body {
-    background-color: #9c8cd4;
+@media (min-width: 200px) {
+    body {
+        background-color: #9c8cd4;
+    }
+
+    .whiteBackground {
+        background-color: white;
+        margin: 15px 10px 15px 10px;
+        padding: 2px 10px 30px 10px;
+    }
+
+    .errorText{
+        text-align: center;
+    }
+
+    .friendsTriviaTitle {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .playersPercentageCorrect {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .centerAlignButtons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        height: 50px;
+        margin: 5px;
+        padding: 2px;
+        width: 180px;
+    }
+
+    .hover:hover {
+        background-color: #ffdf00;
+        color: black;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
-.whiteBackground {
-    background-color: white;
-    margin: 25px 45px 25px 45px;
-    padding: 2px 5px 30px 5px;
+@media (min-width: 410px) {
+    body {
+        background-color: #9c8cd4;
+    }
+
+    .whiteBackground {
+        background-color: white;
+        margin: 15px 10px 15px 10px;
+        padding: 2px 10px 30px 10px;
+    }
+
+    .errorText{
+        text-align: center;
+    }
+
+    .friendsTriviaTitle {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .playersPercentageCorrect {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .centerAlignButtons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+        width: 180px;
+    }
+
+    .hover:hover {
+        background-color: #ffdf00;
+        color: black;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
-.errorText{
-    text-align: center;
-}
+@media (min-width: 1106px) {
+    body {
+        background-color: #9c8cd4;
+    }
 
-.friendsTriviaTitle {
-    font-size: 45px;
-    text-align: center;
-}
+    .whiteBackground {
+        background-color: white;
+        margin: 25px 45px 25px 45px;
+        padding: 2px 5px 30px 5px;
+    }
 
-.playersPercentageCorrect {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: center;
-}
+    .errorText{
+        text-align: center;
+    }
 
-p {
-    font-size: 18px;
-    text-align: center;
-}
+    .friendsTriviaTitle {
+        font-size: 45px;
+        text-align: center;
+    }
 
-.centerAlignButtons {
-    display: flex;
-    justify-content: center;
-}
+    .playersPercentageCorrect {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
 
-button {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: black;
-    font-size: 15px;
-    height: 40px;
-    margin: 5px;
-    padding: 5px;
-    width: 180px;
-}
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
 
-.hover:hover {
-    background-color: #ffdf00;
-    color: black;
-}
+    .centerAlignButtons {
+        display: flex;
+        justify-content: center;
+    }
 
-.hide {
-    display: none;
+    button {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+        width: 180px;
+    }
+
+    .hover:hover {
+        background-color: #ffdf00;
+        color: black;
+    }
+
+    .hide {
+        display: none;
+    }
 }
