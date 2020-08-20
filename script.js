@@ -6,6 +6,7 @@ const wrongAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfButtonClicked).css('background-color', '#FF0000');
     $(classOfButtonClicked).attr("disabled","disabled");
     $(classOfOtherButton).attr("disabled","disabled");
+    $(classOfButtonClicked).removeClass("hover");
     $(classOfOtherButton).removeClass("hover");
     numberOfWrongAnswers++;
     if (numberOfCorrectAnswers + numberOfWrongAnswers == 10) {
@@ -16,6 +17,7 @@ const rightAnswer = (classOfButtonClicked, classOfOtherButton) => {
     $(classOfButtonClicked).css('background-color', '#00FF0A');
     $(classOfButtonClicked).attr("disabled","disabled");
     $(classOfOtherButton).attr("disabled","disabled");
+    $(classOfButtonClicked).removeClass("hover");
     $(classOfOtherButton).removeClass("hover");
     numberOfCorrectAnswers++;
     percentage = (numberOfCorrectAnswers / 10 ) * 100;
